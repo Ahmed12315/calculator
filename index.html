@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main-container">
+       <h1>Calculator</h1>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" name="display" id="display" >
+        </div>
+        <div class="row">
+            <input type="button" value="AC" onclick="calculator_func('AC')">
+            <input type="button" value="Del" onclick="calculator_func('Del')">
+            <input type="button" value="." onclick="calculator_sign('.')">
+            <input type="button" value="/" onclick="calculator_sign('/')">
+        </div>
+        <div class="row">
+            <input type="button" value="7" onclick="calculator_num('7')">
+            <input type="button" value="8" onclick="calculator_num('8')">
+            <input type="button" value="9" onclick="calculator_num('9')">
+            <input type="button" value="*" onclick="calculator_sign('*')">
+        </div>
+        <div class="row">
+            <input type="button" value="4" onclick="calculator_num('4')">
+            <input type="button" value="5" onclick="calculator_num('5')">
+            <input type="button" value="6" onclick="calculator_num('6')">
+            <input type="button" value="-" onclick="calculator_sign('-')">
+        </div>
+        <div class="row">
+            <input type="button" value="1" onclick="calculator_num('1')">
+            <input type="button" value="2" onclick="calculator_num('2')">
+            <input type="button" value="3" onclick="calculator_num('3')">
+            <input type="button" value="+" onclick="calculator_sign('+')">
+        </div>
+        <div class="row">
+            <input type="button" value="00" onclick="calculator_num('00')">
+            <input type="button" value="0" onclick="calculator_num('0')">
+            <input class="equal" type="button" value="=" onclick="calculator_eva('=')">
+        </div>
+        <div style="color: grey; " class="name">Made By Ahmed</div>
+    </div>
+   </div>
+   <script src="./app.js"></script>
+</body>
+</html>
